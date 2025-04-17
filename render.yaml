@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: trezvo-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
